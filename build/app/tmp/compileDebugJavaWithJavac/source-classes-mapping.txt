@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+br/com/nortemkt/alba_app/BuildConfig.java
+ br.com.nortemkt.alba_app.BuildConfig
