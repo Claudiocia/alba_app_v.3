@@ -1,5 +1,6 @@
 import 'package:alba_app/models/usuario_model.dart';
 import 'package:alba_app/presentation/custom_icons_icons.dart';
+import 'package:alba_app/presentation/plenario_icons.dart';
 import 'package:alba_app/widgets/tile/drawer_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
@@ -79,7 +80,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               Divider(),
               DrawerTile(CustomIcons.notic, "Notícias", 0),
-              DrawerTile(CustomIcons.dep, "Painel Plenario", 8),
+              DrawerTile(Plenario.plenario2, "Painel Plenario", 8),
               DrawerTile(CustomIcons.dep_par, "Deputados", 1),
               DrawerTile(CustomIcons.dep, "Todos Dep.", 7),
               DrawerTile(CustomIcons.tel_uteis, "Telefones Úteis", 2),

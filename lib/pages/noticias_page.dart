@@ -3,7 +3,8 @@ import 'dart:io';
 import 'package:alba_app/helpers/noticia_helper.dart';
 import 'package:alba_app/models/noticia_model.dart';
 import 'package:flutter/material.dart';
-import 'package:share/share.dart';
+import 'package:flutter_share_me/flutter_share_me.dart';
+import 'package:simple_url_preview/simple_url_preview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PlaceNoticiaWidget extends StatefulWidget {
@@ -81,7 +82,7 @@ class PlaceNoticiaWidgetState extends State<PlaceNoticiaWidget> {
                       ),
                       TextButton(
                         onPressed: (){
-                          _shareLink(listNotis[index].linkNoticia);
+                          _shareLink(listNotis[index].linkNoticia, listNotis[index].titleNoticia);
                           Navigator.of(context).pop(true);
                         },
                         child: Text("Compartilhar", style: TextStyle(fontFamily: 'Dosis'),),
@@ -109,17 +110,10 @@ class PlaceNoticiaWidgetState extends State<PlaceNoticiaWidget> {
     }
   }
 
-  _shareLink(String texto) async {
-    if(Platform.isIOS){
-      String text1 = texto.substring(0, 4);
-      String text2 = texto.substring(5);
-      String text = text1+"s:"+text2;
-      print("Plataforma IOS o link é: "+ text);
-      await Share.share(text);
-    }else{
-      print("Plataforma Android o link é: "+ texto);
-      await Share.share(texto);
-    }
+  _shareLink(String texto, String title) async {
+    String msg = "*Compart. via Aplicativo ALBA";
+    final FlutterShareMe flutterShareMe = FlutterShareMe();
+    await await flutterShareMe.shareToSystem(msg: title+"\n"+texto+"\n"+msg);
   }
 
 }

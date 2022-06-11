@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/antoniosouza/Documents/Developer/StudioProjects/alba_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/antoniosouza/.gradle/caches/transforms-2/files-2.1/d4f7b73abdf556bd39ae59988a6fe3b4/jetified-tweet-ui-3.1.1/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "315"
+                    },
+                    "to": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "1081",
+                        "endLines": "22",
+                        "endColumns": "12",
+                        "endOffsets": "1341"
+                    }
+                },
+                {
+                    "source": "/Users/antoniosouza/.gradle/caches/transforms-2/files-2.1/bcec4ec18b2f2da9d53eb76c10811c50/jetified-tweet-composer-3.1.1/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,565",
+                        "endLines": "9,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "560,1076"
+                    }
+                }
+            ]
+        }
+    ]
+}

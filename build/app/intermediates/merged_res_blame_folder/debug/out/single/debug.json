@@ -8,6 +8,10 @@
         "source": "/Users/antoniosouza/Documents/Developer/StudioProjects/alba_app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/antoniosouza/Documents/Developer/StudioProjects/alba_app/build/app/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/Users/antoniosouza/Documents/Developer/StudioProjects/alba_app/android/app/src/main/res/xml/provider_paths.xml"
+    },
+    {
         "merged": "/Users/antoniosouza/Documents/Developer/StudioProjects/alba_app/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
         "source": "/Users/antoniosouza/Documents/Developer/StudioProjects/alba_app/android/app/src/main/res/drawable/launch_background.xml"
     },

@@ -1,4 +1,5 @@
 import 'package:alba_app/pages/comissoes_page.dart';
+import 'package:alba_app/pages/painelplena_page.dart';
 import 'package:alba_app/pages/partidos_page.dart';
 import 'package:alba_app/pages/pauta_page.dart';
 import 'package:alba_app/pages/radioalba_page.dart';
@@ -17,14 +18,15 @@ class PlaceMaisAlbaWidget extends StatefulWidget {
 
 class _PlaceMaisAlbaWidgetState extends State<PlaceMaisAlbaWidget> {
   List<String> _filesNome = [
-    'assets/images/ic_mesa_dir.png',
-    'assets/images/ic_comissoes.png',
-    'assets/images/ic_alba_cult.png',
-    'assets/images/ic_pauta.png',
-    'assets/images/ic_tvalba.png',
-    'assets/images/ic_radio.png',
-    'assets/images/ic_diario_oficial.png',
-    'assets/images/ic_partidos.png',
+    'assets/images/ic_mesa_dir.png', //0
+    'assets/images/ic_comissoes.png', //1
+    'assets/images/ic_plenario.png', //2
+    'assets/images/ic_pauta.png', //3
+    'assets/images/ic_alba_cult.png', //4
+    'assets/images/ic_tvalba.png', //5
+    'assets/images/ic_radio.png', //6
+    'assets/images/ic_diario_oficial.png', //7
+    'assets/images/ic_partidos.png', //8
   ];
 
   @override
@@ -61,26 +63,30 @@ class _PlaceMaisAlbaWidgetState extends State<PlaceMaisAlbaWidget> {
         break;
       case 2:
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => PlaceAlbaCultWidget()));
+            MaterialPageRoute(builder: (context) => PlacePainelPlenaWidget()));
         break;
       case 3:
         Navigator.push(context,
             MaterialPageRoute(builder: (context) => PlacePautaWidget()));
         break;
-      case 6:
-        _launchURL("http://egbanet.egba.ba.gov.br/alba");
-        break;
-      case 7:
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => PlacePartidosWidget()));
-        break;
       case 4:
         Navigator.push(context,
-            MaterialPageRoute(builder: (context) => PlaceTVAlbaWidget()));
+            MaterialPageRoute(builder: (context) => PlaceAlbaCultWidget()));
         break;
       case 5:
         Navigator.push(context,
+            MaterialPageRoute(builder: (context) => PlaceTVAlbaWidget()));
+        break;
+      case 6:
+        Navigator.push(context,
             MaterialPageRoute(builder: (context) => PlaceRadioAlbaWidget()));
+        break;
+      case 7:
+        _launchURL("http://egbanet.egba.ba.gov.br/alba");
+        break;
+      case 8:
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => PlacePartidosWidget()));
         break;
     }
   }

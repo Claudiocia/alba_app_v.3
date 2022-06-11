@@ -1,5 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.nortemkt.alba_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
    <application
         android:label="ALBA APP"
        android:name="androidx.multidex.MultiDexApplication"
@@ -30,5 +37,15 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+       <meta-data
+           android:name="com.facebook.sdk.ApplicationId"
+           android:value="@string/facebook_app_id" />
+
+       <provider
+           android:name="com.facebook.FacebookContentProvider"
+           android:authorities="com.facebook.app.FacebookContentProvider284066020571245"
+           android:exported="false" />
+
     </application>
 </manifest>
